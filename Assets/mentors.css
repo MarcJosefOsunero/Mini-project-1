@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Source+Code+Pro:wght@800&display=swap');
+:root {
+    --bs1:#ff4057;
+    --bs2:#5c5c84;
+    --bs3:#ffbaba;
+    --bs4:#282634;
+    --bs5-textbody:#DCDCDC;
+ }
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Righteous', cursive;
+}
+body {
+    background:var(--bs4);
+    background-repeat:no-repeat;
+}
+.navbar {
+    background-color: var(--bs4)
+    
+}
+.nav-item .nav-link {
+    color:var(--bs1) ;
+}
+.nav-link:hover{
+    color:var(--bs5-cbody);
+}
+.card {
+    position:relative !important;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.container:hover > .card {
+    cursor:pointer;
+    transform: rotateY(180deg);
+}
+.card.front, .card-back {
+    height:100%;
+    backface-visibility:hidden;
+}
+.card-back{
+    background: var(--bs2);
+    position:absolute;
+    transform:rotateY(180deg);
+}
+.card-back ul li {
+    color:var(--bs3);
+}
+span {
+    color:var(--bs1);
+}
+.card .card-body {
+    background-color: var(--bs5-cbody);
+    height:40rem;
+}
+.card-title, .card-text {
+    color:var(--bs3);
+}
+ .alias {
+    color:#e63949;
+}   
+footer {
+    background-color: var(--bs5-textbody)
+}
+footer li a {
+    text-decoration: none;
+    color:var(--bs1);
+}
+.list-item {
+    width: 100%;
+    text-align:center;
+}
+.list-inline-item a{
+    color:var(--bs1);
+    background-color: var(--bs4);
+    border-radius: 50px;
+    padding:10px;
+}
+@media screen  {
+    
+}
+@keyframes Color{
+    0%{
+      color:#A0D468;
+    }
+    
+    20%{
+      color:#4FC1E9;
+    }
+    
+    40%{
+      color:#FFCE54;
+    }
+    
+    60%{
+      color:#FC6E51;
+    }
+    
+    80%{
+      color:#ED5565;
+    }
+    
+    100%{
+      color:#AC92EC;
+    }
+}
+  
+@-moz-keyframes Color{
+    0%{
+      color:#A0D468;
+    }
+    
+    20%{
+      color:#4FC1E9;
+    }
+    
+    40%{
+      color:#FFCE54;
+    }
+    
+    60%{
+      color:#FC6E51;
+    }
+    
+    80%{
+      color:#ED5565;
+    }
+    
+    100%{
+      color:#AC92EC;
+    }
+}
+  
+  @-webkit-keyframes Color{
+    0%{
+      color:#A0D468;
+    }
+    
+    20%{
+      color:#4FC1E9;
+    }
+    
+    40%{
+      color:#FFCE54;
+    }
+    
+    60%{
+      color:#FC6E51;
+    }
+    
+    80%{
+      color:#ED5565;
+    }
+    
+    100%{
+      color:#AC92EC;
+    }
+}
+  

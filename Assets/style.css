@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Source+Code+Pro:wght@800&display=swap');
+:root {
+   --bs1:#ff4057; /* text */
+   --bs2:#5c5c84;
+   --bs3:#ffbaba;
+   --bs4:#282634; /* body  */
+   --bs5-textbody:#DCDCDC; 
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Righteous', cursive;
+}
+body {
+    background: #DCDCDC;
+    background-repeat:no-repeat;
+    height:100%;
+}
+footer {
+    background-color: var(--bs4)
+}
+footer li a {
+    text-decoration: none;
+}
+.navbar {
+    background-color: var(--bs4)
+}
+.carousel-item img {
+    margin:auto;
+}
+
+.nav-item .nav-link {
+    color:var(--bs1) ;
+}
+.nav-link:hover{
+    color:var(--bs5-textbody);
+}
+.card {
+    position:relative !important;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.container:hover > .card {
+    cursor:pointer;
+    transform: rotateY(180deg);
+}
+.card.front, .card-back {
+    height:100%;
+    backface-visibility:hidden;
+}
+.card-back{
+    background-image: url(Assets/Images/JV Mitchel.jpg);
+    background-color:var(--bs4);
+    position:absolute;
+    transform:rotateY(180deg);
+}
+.mv-text {
+    font-size: 50px;
+    animation: Color 4s linear infinite;
+    -webkit-animation: Color 4s ease-in-out infinite;
+}
+span, h4 {
+    color:var(--bs1);
+}
+.card .card-body {
+    background-color: var(--bs5-textbody);
+    height:45rem;
+}
+.card-title, .card-text {
+    color:var(--bs3);
+}
+ .alias {
+    color:#ff4057;
+}
+.scrolling{
+    position:relative;
+    width:100%;
+    height:50px;
+    overflow:hidden;
+    margin-top:20px;
+}
+.scrolling h4 {
+    position:absolute;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-size:3em;
+    text-align:center;
+    line-height:50px;
+    transform:translateX(100%);
+    animation:scrolling 15s linear infinite;
+}
+.scrolling-up {
+    position:relative;
+    width:100%;
+    height:50px;
+    overflow:hidden;
+    margin-top:20px;
+    z-index: -4;
+}
+.list-item {
+    
+    width: 95%;
+    text-align:center;
+}
+
+.list-inline-item a{
+    color:var(--bs1);
+    background-color: var(--bs4);
+    border-radius: 50px;
+    padding:10px;
+    
+}
+@keyframes move{
+    0%{
+        transform:translateY(50%);
+    }
+    100%{
+        transform:translateY(-50%);
+    }
+}
+@keyframes scrolling{
+    0%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}

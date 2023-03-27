@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Source+Code+Pro:wght@800&display=swap');
+:root {
+    --bs1:#ff4057;
+    --bs2:#5c5c84;
+    --bs3:#ffbaba;
+    --bs4:#282634; /* body  */
+    --bs5-textbody:#DCDCDC; /* text */
+ }
+ 
+ * {
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+     font-family: 'Righteous', cursive;
+ }
+ body {
+     background: #DCDCDC;
+     background-repeat:no-repeat;
+     height:100%;
+ }
+ footer {
+     background-color: var(--bs4)
+ }
+ footer li a {
+     text-decoration: none;
+ }
+ .navbar {
+     background-color: var(--bs4)
+ }
+ .carousel-item img {
+     margin:auto;
+ }
+ 
+ .nav-item .nav-link {
+     color:var(--bs1) ;
+ }
+ .nav-link:hover{
+     color:var(--bs5-textbody);
+ }
+  {
+    background: #ff8e71;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #ebd8d0;
+  }
+  
+  .box {
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  .box::before {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    content: '';
+    height: 10px;
+    position: absolute;
+    
+  }
+  .box::after {
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    content: '';
+    height: 10px;
+    position: absolute;
+    
+  }
+  
+  h5 {
+    float: left;
+  }
+  
+  .card-back ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    -webkit-animation: scrollUp 4s ease-in-out infinite normal;
+            animation: scrollUp 4s ease-in-out infinite normal;
+  }
+  .card-back ul li{
+    opacity: 1;
+    height: 20px;
+    padding: 10px;
+    list-style: none;
+  }
+  
+  @-webkit-keyframes scrollUp {
+    from {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      -webkit-transform: translateY(-80%);
+              transform: translateY(-80%);
+    }
+  }
+  
+  @keyframes scrollUp {
+    from {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      -webkit-transform: translateY(-80%);
+              transform: translateY(-80%);
+    }
+  }
